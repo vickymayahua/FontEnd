@@ -1,0 +1,59 @@
+*{margin: 0px; padding: 0px; list-style-type: none;} /*list-style-type设置不同的列表样式*/
+body{
+	background-color: pink;
+}
+.main{position:  relative; }
+#base,.main{
+	width: 302px;
+	margin: 100px auto 0px;
+	height: 302px;
+}
+#base li{
+	float:left;
+	height: 100px;
+	width: 100px;
+	color: transparent;/*背景颜色透明*/
+}
+.x{
+	/*图片路径、图片是否重复、背景图片起始位置、*/
+	background: url(img/x.png) no-repeat left top;
+}
+.o{
+	background: url(img/o.png) no-repeat left top;
+}
+.h1class{
+	text-align: center;
+	padding-top: 50px;
+	border: 1px solid red;
+}
+#lock{
+	height: 302px;
+	width: 302px;
+	left: 0px;
+	top: 0px;
+	z-index: 8;/*大于0则在上层，小于0则在下层*/
+	border: 1px solid blue;
+	display: none;
+	position: absolute;
+}
+#liid0,#liid1,#liid3,#liid4{
+	border-right: 1px solid #855b27;
+	border-bottom: 1px solid #855b27;
+}
+#liid2,#liid5{
+	border-bottom:  1px solid #855b27;
+}
+#liid6,#liid7{
+	border-right: 1px solid #855b27;
+}
+.astyle{
+	display: block;
+	padding: 5px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	line-height: 150%;
+	background: green;
+	margin: 40px auto;
+	width: 150px;
+}

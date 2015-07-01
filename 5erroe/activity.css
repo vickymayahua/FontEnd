@@ -1,0 +1,176 @@
+.mbh-content{
+	width:100%; 
+	position:relative;
+}
+.mbh-bk{
+	width:100%; 
+	position:absolute; 
+	top:0; 
+	height:388px;
+	border: 1px solid red;
+}
+.mbh-bk-tip1{
+	width:100%; 
+	height:300px; 
+	background:url(imgs/1.jpg) center no-repeat;
+	border: 1px solid orange;
+}
+.mbh-bk-tip2{
+	width:100%; 
+	height:299px; 
+	background:url(imgs/2.jpg) center no-repeat;
+	border: 1px solid yellow;
+}
+.mbh-function{
+	position:absolute; 
+	top:0; 
+	width:100%; 
+	height:389px;
+	border: 1px solid green;
+}
+.mbh-function-box{
+	width:1000px; 
+	margin:0 auto; 
+	height:389px; 
+	position:relative;
+	border: 1px solid pink;
+}
+.mbh-function-box b{
+	display:block; 
+	position:absolute; 
+	width:27px; 
+	height:38px;
+	
+}
+.mbh-function-box b em{
+	background:url(imgs/address.jpg) no-repeat right top;
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/mbh-top-icon.png);
+	background:none;
+	width:27px; 
+	height:38px; 
+	position:absolute;
+	top:0; 
+	left:0; 
+	z-index:60;
+}
+.mbh-function-box span{
+	display:none;
+	width:27px; 
+	height:38px;
+	background:url(imgs/4.jpg) no-repeat right top;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/mbh-top-icon1.png);
+	background:none;
+	z-index:70; 
+	position:absolute;
+}
+.mbh-function-box i{
+	display:block;
+	width:27px; 
+	height:38px; 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	line-height:60px; 
+	overflow:hidden; 
+	font-size:36px; 
+	z-index:80;
+}
+.mbh-function-box b.stand1{left:377px; top:117px;}/*中国*/
+.mbh-function-box b.stand2{left:878px; top:92px;}/*美国*/
+.mbh-function-box b.stand3{left:19px; top:39px;}/*英国*/
+.mbh-function-box b.stand4{left:68px; top:59px;}/*德国*/
+.mbh-function-box b.stand5{left:40px; top:103px;}/*法国*/
+.mbh-function-box b.stand6{left:82px; top:116px;}/*意大利*/
+.mbh-function-box b.stand7{left:475px; top:312px;}/*澳大利亚*/
+.mbh-function-box b.stand8{left:434px; top:125px;}/*韩国*/
+.mbh-function-box b.stand9{left:477px; top:89px;}/*日本*/
+
+.mbh-function-box b div{position:absolute; display:none;}
+.mbh-function-box b.stand1 div{
+	background:url(imgs/4.jpg) no-repeat;
+	/*在IE下的滤镜设置*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src = 'imgs/address.jpg');
+	background:none; 
+	width:207px; 
+	height:120px; 
+	top:53px; 
+	left:-10px;
+}
+.mbh-function-box b.stand2 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand2.png);
+	background:none; 
+	width:216px; 
+	height:165px; 
+	top:-28px; 
+	left:-226px;
+}
+.mbh-function-box b.stand3 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand3.png);
+	background:none; 
+	width:214px; 
+	height:140px; 
+	top:28px; 
+	left:1px;
+}
+.mbh-function-box b.stand4 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand4.png);
+	background:none; 
+	width:205px; 
+	height:113px; 
+	top:45px; 
+	left:0px;
+}
+.mbh-function-box b.stand5 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand5.png);
+	background:none; 
+	width:204px; 
+	height:172px; 
+	top:-50px; 
+	left:24px;
+}
+.mbh-function-box b.stand6 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand6.png);
+	background:none; 
+	width:210px; 
+	height:132px; 
+	top:-72px; 
+	left:21px;
+}
+.mbh-function-box b.stand7 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand7.png);
+	background:none; 
+	width:255px; 
+	height:115px; 
+	top:-96px; 
+	left:-194px;
+}
+.mbh-function-box b.stand8 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand8.png);
+	background:none; 
+	width:207px; 
+	height:146px; 
+	top:31px; 
+	left:-124px;
+}
+.mbh-function-box b.stand9 div{
+	background:url(imgs/4.jpg) no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/stand9.png);
+	background:none; 
+	width:198px; 
+	height:161px; 
+	top:7px; 
+	left:-143px;
+}
+.mbh-function-box b.stand2 em{
+	background:url(imgs/4.jpg) no-repeat right top;
+	/*Microsoft.AlphaImageLoader是IE滤镜的一种，其主要作用就是对图片进行透明处理*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img8.imglafaso.com/images/mbh/mbh-top-icon1.png);
+	background:none;
+}

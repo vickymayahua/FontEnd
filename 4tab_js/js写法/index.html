@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8"/>
+	<title>js写的tab选项卡</title>
+	<link rel="stylesheet" type="text/css" href="tab.css">
+</head>
+<body>
+	<div class = "tab">
+		<div class = "item">
+			<ul>
+				<li onMouseOver = "itemOne();">栏目1</li>
+				<li onMouseOver = "itemTwo();">栏目2</li>
+				<li onMouseOver = "itemThree();">栏目3</li>
+				<li onMouseOver = "itemFour();">栏目4</li>
+			</ul>
+		</div>
+		<div class = "content">
+			<div id = "one" class = "common">
+				<ul>
+					<li>选项卡1下的li1</li>
+					<li>选项卡1下的li2</li>
+					<li>选项卡1下的li3</li>
+				</ul>
+			</div>
+			<div id = "two" class = "common">
+				<ul>
+					<li>选项卡2下的li1</li>
+					<li>选项卡2下的li2</li>
+					<li>选项卡2下的li3</li>
+				</ul>
+			</div>
+			<div id = "three" class = "common">
+				<ul>
+					<li>选项卡3下的li1</li>
+					<li>选项卡3下的li2</li>
+					<li>选项卡3下的li4</li>
+				</ul>
+			</div>
+			<div id = "four" class = "common">
+				<ul>
+					<li>选项卡4下的li1</li>
+					<li>选项卡4下的li2</li>
+					<li>选项卡4下的li3</li>
+					<li>选项卡4下的li4</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src = "tab.js"></script>
+</body>
+</html>

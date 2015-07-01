@@ -1,0 +1,28 @@
+<!DOCTYPE html><!--网页的文档类型-->
+<html lang = "zh"><!--这个是给搜索引擎看的，这是个中文网站-->
+<head>
+	<meta charset = "utf-8"><!--设置编码为UTF-8-->
+	<title>九宫格游戏</title>
+	<link rel="stylesheet" type="text/css" href="sudoku.css">
+	
+</head>
+<body>
+	<h1 class = "h1class">九宫格小游戏</h1>
+	<div class = "main">
+		<ul id = "base">
+			<li id = "liid0" onclick = "test()">0</li>
+			<li id = "liid1" onclick = "test()">1</li>
+			<li id = "liid2" onclick = "test()">2</li>
+			<li id = "liid3" onclick = "test()">3</li>
+			<li id = "liid4" onclick = "test()">4</li>
+			<li id = "liid5" onclick = "test()">5</li>
+			<li id = "liid6" onclick = "test()">6</li>
+			<li id = "liid7" onclick = "test()">7</li>
+			<li>8</li>
+		</ul>
+		<div id = "lock"></div><!--用于锁屏-->
+	</div>
+	<a href="#" onclick = "again();" class = "astyle">再来一次</a>
+	<script type="text/javascript" src = "sudoku.js"></script>
+</body>
+</html>

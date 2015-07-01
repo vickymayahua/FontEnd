@@ -1,0 +1,96 @@
+*{margin: 0; padding: 0; list-style-type: none;}
+#box{
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 150px;/*设置成圆形*/
+	box-shadow: 1px 1px 5px #000;/*阴影设置*/
+	cursor:pointer;/*光标呈现为指示链接的指针（一只手）*/
+	position: absolute;/*设为绝对位置，在这里的上层是body*/
+	top: 100px;
+	left: 300px;
+}
+.hour{ /*时针的设置*/
+	width: 14px;
+	height: 80px;
+	background: #000;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	margin: -80px 0 0 -7px;
+	-webkit-transform-origin:center bottom;
+	/*变形原点，该元素围绕着那个点变形或是旋转，而默认是其中心位置
+	该属性只有在设置了transform属性才可以进行；
+	X，Y的值可以px，em，%等，
+	另外X可为left、center、right；Y为top，center，buttom */
+	border-radius:50% 50% 0 0;/*设置小尖头*/
+
+}
+.min{/*分针设置*/
+	width: 14px;
+	height: 100px;
+	background-color: #000;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin: -100px 0 0 -7px;
+	border-radius: 50% 50% 0 0;/*设置小尖头*/
+	-webkit-transform-origin:center bottom;
+}
+.sec{/*秒针设置*/
+	width: 4px;
+	height: 120px;
+	background: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -120px 0 0 -2px;
+	-webkit-transform-origin:center bottom;
+}
+.cap{/*中间原点设置*/
+	width: 20px;
+	height: 20px;
+	background: #999;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*以上的top,left都是按照左上角的原点来设置的
+	所以实际相对于div中心来说，应该向左偏移一个半径
+	向上一个半径，也就是下面的margin*/
+	margin: -10px 0 0 -10px;
+}
+/*细的刻度*/
+.scale{
+	width: 4px;
+	height: 10px;
+	background: pink;
+	position: absolute;
+	left: 50%;
+	margin-left: -2px;
+	display: block;
+	-webkit-transform: rotate(45deg);
+	-webkit-transform-origin:center 150px; /*相对于表盘原点*/
+}
+/*粗的刻度*/
+.bs{
+	width:6px;
+	height:18px;
+	background:blue; 
+	position:absolute;
+	left:50%; 
+	margin-left:-3px; 
+	display:block;
+	-webkit-transform: rotate(45deg);
+	-webkit-transform-origin: center 150px;	
+}
+.bs em{/*对内容表示强调*/
+	width:50px; 
+	text-align:center;
+	margin:17px 0; 
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-25px; 
+	font-style:normal;
+}
