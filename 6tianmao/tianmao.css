@@ -1,0 +1,417 @@
+*{margin:0;padding: 0px;list-style-type: none;}
+body{
+	font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+/* a:link{
+	text-decoration : none;
+	color: #999;
+} */
+a:hover{
+	color:red;
+}
+/*导航条*/
+#site-nav{
+	min-width: 990px;
+	width: auto;
+	height: 26px;
+	position: relative;
+	z-index: 99999;
+	background:#f2f2f2;
+}
+/* 导航条->主体body */
+#sn-bd{
+	width: 1190px;
+	margin: auto;
+	position: relative;
+}
+/* 导航栏下的容器 */
+#sn-container{
+	height: 26px;
+	width: 1190px;
+	/* border: 1px solid pink; */
+	position: relative;
+	color: #999;
+}
+/* 导航栏首页 */
+#sn-back-home{
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	margin-right: 20px;
+}
+/* 登陆信息 */
+#login-info{
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	margin-right: 20px;
+	position: relative;/* 依旧在文档流中 */
+}
+#sn-quick-menu{
+	height: 26px;
+	/* border: 1px solid green; */
+	float: right;
+}
+#sn-quick-menu li{
+	float: left;
+	margin-right: 10px;
+	position: relative;/* 这里的position相对定位，在这里没用，为的是子元素用position */
+	/* border: 1px solid orange; */
+}
+.sn-menu{
+	position: relative;
+}
+.sn-menu b{/* 小三角的构造 */
+	position: absolute;
+	right: -6px;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border-width:3px;
+	border-style: solid dashed dashed dashed;/* 由于IE6没有透明，所以需要设置border-style为dashed（虚线），达到透明效果 */
+	border-color: #420DBF transparent transparent transparent; /* 只保留一种，剩余三种设置为透明  */
+	font-size: 0;/* 虽然我们设置了宽高为0，但是IE6下仍会有默认的，所以我们需要设置字体大小和行高为0 */
+	line-height: 0;
+}
+/* 我的淘宝的tab列表 */
+.menu-bd{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 19px;/* 向下移动了27px */
+	background: #ffe;
+	z-index: 93110;
+	width: 150%;
+	border: solid #eee;
+	border-width: 0 1px 1px;
+}
+#site-nav .menu-bd-panel a{
+	display: block;
+}
+.sn-separator{
+	display: inline-block;
+	width: 0;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: top;
+	position: relative;
+	top: 6px;
+	left: 0;
+	font-size: 0;
+	margin: 0 2px 0 5px;
+	border: 1px solid #ccc;
+}
+/* 手机版 */
+#site-nav .sn-qrcode{
+	display: none;
+	position: absolute;
+	height: 227px;
+	width: 175px;
+	background-color: #fff;
+	left: -48px;
+	top: 26px;
+	box-shadow: 0 0 5px #aaa;
+}
+#site-nav .sn-qrcode-content{
+	width: 175px;
+	height: 175px;
+	margin: 5px 0 0;
+	overflow: auto;
+	background: url(./imgs/TB1K4a8IpXXXXaRXFXXbNxvWXXX-175-215.png) 0 0 no-repeat;
+}
+#site-nav .sn-qrcode p{
+	background: url(./imgs/TB1K4a8IpXXXXaRXFXXbNxvWXXX-175-215.png) 0 -185px no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0 15px;
+	line-height: 35px;
+}
+#site-nav .sn-qrcode b{
+	width: 0;
+	height: 0;
+	line-height: 0
+	font-size:0;
+	position: absolute;
+	left: 50%;
+	margin-left: -2px;
+	top:-10px;
+	border-width: 5px;
+	border-style: dashed dashed solid;
+	border-color: transparent transparent #fff; 
+}
+/* 页面header的设置 */
+#header{
+	min-width: 1190px;
+	height: 85px;
+	width: auto;
+	position: relative;
+	z-index: 1000;
+	background-color: #fff;
+	/* border: 1px blue solid; */
+}
+.headerLayout{
+	width: 1190px;
+	margin: 0 auto;
+	/* border: 1px green solid; */
+}
+.headerCon{
+	position: relative;
+	width: 100%;
+	zoom:1;
+}
+#header #mallLogo{
+	position: relative;
+	width: 340px;
+	height: 85px;
+	overflow: hidden;
+	float: left;
+	/* z-index: 9; */
+	/* border: 1px red solid; */
+}
+.fp-logo{
+	left: -2px;
+	color:red;
+	line-height: 85px;
+	font-size: 20px;
+	font-weight: 40;
+	height: auto;
+	overflow: visible;
+}
+/* 搜索 */
+#mallSearch{
+	float: left;
+	padding-top: 15px;
+	padding-right: 20px;
+	width: 540px;
+}
+.mallSearch-form{
+	border:#c40000 solid;
+	border-width: 3px 0 3px 3px;
+	height: 32px;
+}
+#mallSearch legend{
+	display: none;
+}
+#header .mallSearch-input{/* 这是方便放“搜索”两个字 */
+	height: 32px;
+	line-height: 32px;
+	/* background-color: pink; */
+	position: relative;
+}
+.s-combobox{
+	float: left;
+	font-size: 12px;
+	height: 32px;
+}
+.s-combobox #mq{
+	padding: 5px 3px 5px 5px;
+	background: 0 0;
+	height: 22px;/* 32-10 */
+	width: 439px;
+	line-height: 22px;
+	/* padding-bottom: 8px; */
+	color: #000;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+	font-weight: 900;
+	border:none;
+}
+/* 搜索按钮设置 */
+#header #mallSearch button{
+	border:none;
+	height: 32px;
+	line-height: 33px;
+	position: absolute;
+	right: -1px;
+	z-index: 1;
+	width: 90px;
+	font-size: 16px;
+	letter-spacing: 4px;
+	cursor: pointer;
+	color: #fff;
+	background-color: #c40000;
+	overflow: hidden;
+}
+/* 热搜设置 */
+.hot-query{
+	padding: 4px 0 0;
+	margin-left: -13px;
+	height: 16px;
+	overflow: hidden;
+	width: 100%;
+}
+.hot-query li{
+	display: inline-block;
+	border-left:1px solid #ccc;
+	line-height: 1.1;
+	padding: 0 12px; 
+}
+/* 天猫主要内容 */
+#content{
+	position: relative;
+	width: auto;
+	margin: 15px auto 0;
+	padding-bottom: 30px;
+	z-index: 10;
+	background-color: #f5f5f5;
+}
+.fp-main-nav{
+	background: #fff;
+}
+.main-container{
+	position: relative;
+	width: 1190px;
+	margin: auto;
+}
+#J_FpMainNav{
+	position: relative;
+	margin-left: 190px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 0;
+}
+#J_FpMainNav li{
+	position: relative;
+	display: inline-block;
+	padding: 0 20px;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;/* 把元素的顶端与行中最高元素的顶端对齐 */
+}
+#J_FpMainNav li a{
+	color: #000;
+}
+/* 垂直方向上的商品分类 */
+#J_FpCategoryMenu{
+	position: relative;
+	padding-bottom: 20px;
+	font-family: 'Microsoft YaHei';
+	height: 480px;
+}
+.category-nav-container{
+	position: relative;
+	width: 1190px;
+	margin: auto;
+	height: 0;
+	z-index: 2;
+}
+.category-menu-nav{
+	position: relative;
+	width: 190px;
+	z-index: 4px;
+	background: url(./imgs/category1.png) #181818 no-repeat;
+}
+.category-menu-nav .menu-title{
+	position: absolute;
+	top:-33px;
+	left: 0;
+	width: 190px;
+	height: 33px;
+	line-height: 33px;
+	background-color: #c40000;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+.category-menu-nav .menu-nav-container{
+	width:190px;
+}
+.category-menu-nav .menu-nav-container li{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+}
+.category-menu-nav .menu-nav-container a{
+	color: #fff;
+}
+.category-menu-nav .menu-nav-container li .menu-nav-icon{
+	display: inline-block;
+	width: 35px;
+	margin-right: 10px;
+	text-align: right;
+	font-size: 16px;
+	transition:width .2s linear;
+}
+/* 商品服务分类垂直方向上的动作 */
+.category-menu-nav .menu-nav-container .menu-nav-selected{
+	background: #4a4a4a;
+}
+.category-menu-nav .menu-nav-container .menu-nav-hover{
+	background-color: #a90000;
+}
+/* 将鼠标悬浮后出现的div进行隐藏 */
+.category-menu-content .hidden{
+	display: none;
+}
+.category-menu-content .menu-pannel-hover{
+	display: block;
+}
+
+.category-menu-content .category-menu-pannel{
+	position: relative;
+	height: 400px;
+}
+.category-menu-content .category-menu-pannel .fp-lazyload-con{
+	background-color: #f5f5f5;
+}
+.category-pannel-banner{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.category-menu-pannel .banner-container{
+	position: relative;
+	width: 1000px;
+	height: 480px;
+	padding-left: 190px;
+	overflow: hidden;
+	margin: auto;
+	z-index: 1;
+}
+.text-banner{
+	position: absolute;
+	top: 0;
+	left: auto;
+	right: 190px;
+	width: 405px;
+	height: 480px;
+	z-index: 1;
+	transition:opacity .6s linear;
+	opacity: 1;
+	background: TB10gyNIpXXXXX4XFXXF.MHJpXX-90-45.jpg_q90 (1).jpg no-repeat;
+}
+.main-banner{
+	width: 810px;
+	height: 480px;
+	border: 0;
+	transition:transform 4s linear;
+	transform:scaleX(1) scaleY(1); 
+}
+.small-banner{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 190px;
+	height: 480px;
+	z-index: 5;
+	opacity: .95;
+}
+.small-banner .banner-separator{
+	display: block;
+	height: 0;
+	width: 0;
+	font-size: 0;
+	line-height: 0;
+	border-top: 1px dotted #eee;
+}
+.j_ActLink{
+	vertical-align: top;
+	width: 188px;
+	height: 240px;
+}
