@@ -1,0 +1,16 @@
+#myCanvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.myText{
+	color: white;
+}
+.container{
+	text-align: center;
+	clear: both;
+	position: absolute;
+	top: 20px;
+	left: 180px;
+	z-index: 9999;
+}
